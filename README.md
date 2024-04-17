@@ -21,7 +21,7 @@ let wsfmp4 = new WSFMP4(media, {
 
 ## Video Control
 
-Video is controlled through HTML <video> element HTMLVideoElement methods, events and optional UI controls (<video controls>).
+Video is controlled through HTML video element HTMLVideoElement methods, events and optional UI controls (video controls).
 
 # License
 
