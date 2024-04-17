@@ -5,11 +5,11 @@ wsfmp4.js is a JavaScript library aimed at playing fmp4 video segments in browse
 ## How to Use:
 
 ```javascript
-npm install --save wsfmp4.js
+npm i wsfmp4.js
 ```
 
 ```javascript
-import WSFMP4 from "wsfmp4";
+import WSFMP4 from "wsfmp4.js";
 
 let media = document.querySelector("#video");
 
