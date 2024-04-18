@@ -19,6 +19,12 @@ let wsfmp4 = new WSFMP4(media, {
 });
 ```
 
+### Parameter
+
+- debug: Enable debug mode, which will output detailed logs. Default is false.
+- live: Enable live mode. Default is false.
+- liveMaxLatency: Maximum allowed latency for live streaming. Default is 0.
+
 ## Video Control
 
 Video is controlled through HTML video element HTMLVideoElement methods, events and optional UI controls (video controls).
