@@ -1,5 +1,8 @@
 # wsfmp4.js
 
+[English](https://github.com/yumexupanic/wsfmp4.js) | [简体中文](https://github.com/yumexupanic/wsfmp4.js/blob/main/README_zh.md)
+
+
 wsfmp4.js  支持在浏览器中使用 websocket 传输的 fmp4 数据进行播放，使用 MSE 技术实现。
 
 ## 如何使用
