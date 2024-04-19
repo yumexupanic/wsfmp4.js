@@ -2,9 +2,18 @@
   "name": "wsfmp4.js",
   "license": "Apache-2.0",
   "description": "wsfmp4.js is a JavaScript library designed to play fragmented mp4 format video data transmitted via WebSocket in browsers that support Media Source Extensions (MSE).",
+  "keywords": [
+    "mp4",
+    "fmp4",
+    "video",
+    "stream",
+    "mediasource",
+    "live",
+    "live-streaming"
+  ],
   "homepage": "https://github.com/yumexupanic/wsfmp4.js",
   "authors": "yumexupanic <yumexupanic+wsfmp4@gmail.com>",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "type": "module",
   "files": [
     "dist/**/*",
