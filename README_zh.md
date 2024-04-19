@@ -27,6 +27,10 @@ let wsfmp4 = new WSFMP4(media, {
 - live 开启直播模式 默认 false
 - liveMaxLatency 允许的直播最大延迟，默认 0
 
+### 函数
+
+- destroy 销毁组件
+
 ## 视频控制
 
 由于使用 MSE 接口实现，最终的数据都会给 video 标签，所以控制视频直接使用 video 相关接口。

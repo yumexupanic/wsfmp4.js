@@ -25,6 +25,10 @@ let wsfmp4 = new WSFMP4(media, {
 - live: Enable live mode. Default is false.
 - liveMaxLatency: Maximum allowed latency for live streaming. Default is 0.
 
+### Fucntions
+
+- destroy: Destroys the component.
+
 ## Video Control
 
 Video is controlled through HTML video element HTMLVideoElement methods, events and optional UI controls (video controls).
