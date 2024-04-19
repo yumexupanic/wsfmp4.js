@@ -5,7 +5,15 @@
 
 wsfmp4.js  支持在浏览器中使用 websocket 传输的 fmp4 数据进行播放，使用 MSE 技术实现。
 
-## 如何使用
+![wsfmp4](https://imgur.cloud/wsfmp4/wsfmp4.jpg)
+
+## 快速开始
+
+流媒体服务(如果你有流媒体，可以跳过此步)
+```shell
+# ws://127.0.0.1:6060/stream
+docker run -d -p 6060:6060 wsfmp4
+```
 
 ```javascript
 npm i wsfmp4.js
@@ -20,7 +28,7 @@ let wsfmp4 = new WSFMP4(media, {
   debug: true,
   live: false,
   liveMaxLatency: 4
-  url: "ws://example.com",
+  url: "ws://127.0.0.1:6060/stream",
 });
 ```
 
