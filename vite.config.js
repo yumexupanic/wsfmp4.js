@@ -1,17 +1,7 @@
-import { defineConfig } from "vite";
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
 
+// https://vitejs.dev/config/
 export default defineConfig({
-  build: {
-    lib: {
-      entry: "./lib/wsfmp4.js",
-      name: "wsfmp4",
-      formats: ["es", "umd", "iife", "cjs"],
-      fileName: (format) => {
-        if (format == 'es') {
-          return `wsfmp4.js`
-        }
-        return `wsfmp4.${format}.js`
-      },
-    }
-  },
-});
+  plugins: [vue()],
+})

@@ -1,31 +1,22 @@
 {
-  "name": "wsfmp4.js",
-  "license": "Apache-2.0",
-  "description": "wsfmp4.js is a JavaScript library designed to play fragmented mp4 format video data transmitted via WebSocket in browsers that support Media Source Extensions (MSE).",
-  "homepage": "https://github.com/yumexupanic/wsfmp4.js",
-  "authors": "yumexupanic <yumexupanic+wsfmp4@gmail.com>",
-  "version": "0.0.1",
+  "name": "wsfmp4-pages",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
-  "files": [
-    "dist/**/*",
-    "lib/**/*"
-  ],
-  "main": "./dist/wsfmp4.js",
-  "module": "./dist/wsfmp4.js",
-  "types": "./dist/wsfmp4.d.ts",
-  "exports": {
-    "types": "./wsfmp4.d.ts",
-    "import": "./dist/wsfmp4.js",
-    "require": "./dist/wsfmp4.cjs"
-  },
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
-  },
-  "devDependencies": {
-    "vite": "^5.0.0"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "mp4box": "^0.5.2"
+    "vue": "^3.4.21",
+    "wsfmp4.js": "^0.0.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.2.0"
   }
 }
