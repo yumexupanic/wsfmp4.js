@@ -6,6 +6,7 @@ wsfmp4.js is a JavaScript library aimed at playing fmp4 video segments in browse
 
 ![wsfmp4](https://imgur.cloud/wsfmp4/wsfmp4.jpg)
 
+DEMO: <https://wsfmp4-js.pages.dev>
 ## Quick Start
 
 Streaming service (you can skip this step if you have streaming)

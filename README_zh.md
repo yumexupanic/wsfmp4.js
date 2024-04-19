@@ -7,6 +7,8 @@ wsfmp4.js  支持在浏览器中使用 websocket 传输的 fmp4 数据进行播�
 
 ![wsfmp4](https://imgur.cloud/wsfmp4/wsfmp4.jpg)
 
+
+DEMO: <https://wsfmp4-js.pages.dev>
 ## 快速开始
 
 流媒体服务(如果你有流媒体，可以跳过此步)
