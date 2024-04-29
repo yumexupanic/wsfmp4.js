@@ -13,7 +13,7 @@ Streaming service (you can skip this step if you have streaming)
 
 ```shell
 # ws://127.0.0.1:6060/stream
-docker run -d -p 6060:6060 wsfmp4
+docker run -d -p 6060:6060 yumexupanic/wsfmp4
 ```
 
 ```javascript
