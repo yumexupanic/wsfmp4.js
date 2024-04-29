@@ -14,7 +14,7 @@ DEMO: <https://wsfmp4-js.pages.dev>
 
 ```shell
 # ws://127.0.0.1:6060/stream
-docker run -d -p 6060:6060 wsfmp4
+docker run -d -p 6060:6060 yumexupanic/wsfmp4
 ```
 
 ```javascript
