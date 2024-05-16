@@ -1,6 +1,6 @@
 # wsfmp4.js
 
-[English](https://github.com/yumexupanic/wsfmp4.js) | [简体中文](https://github.com/yumexupanic/wsfmp4.js/blob/main/README_zh.md)
+[English](https://github.com/yumexupanic/wsfmp4.js) | [简体中文](https://github.com/yumexupanic/wsfmp4.js/blob/main/README_zh.md) | [日本語](https://github.com/yumexupanic/wsfmp4.js/blob/main/README_jp.md) 
 
 wsfmp4.js 支持在浏览器中使用 websocket 传输的 fmp4 数据进行播放，使用 MSE 技术实现，支持 h264 以及 h265。
 
@@ -41,10 +41,12 @@ let wsfmp4 = new WSFMP4(media, {
 - debug 开启调试模式，会输出详细 log 默认 false
 - retry 开启重试 默认 false （直播推荐开启）
 - live 开启直播模式 默认 false （直播推荐开启）
-- liveMaxLatency 直播最大延迟，超过后会自动刷新到最新帧 单位秒 默认 0 （直播推荐配置）
+- liveMaxLatency 直播最大延迟，超过后会自动刷新到最新帧 单位秒 默认 0 （直播推荐开启）
 - cacheMax 缓存的最大时长，自动清理 buffer 单位秒 默认 8
 
-对于直播流，推荐开启直播相关的配置，能有效的控制延时，直播延时通常需要服务器和客户端配合，客户端主要处理缓存的内容刷新以及 buffer 的管理。开启了直播状态后，默认会进行一些优化。另外 liveMaxLatency 的配置比较重要，设置的太小视频会频繁的等待，太大会延迟较高。具体的参数需要根据服务端多久封装一包数据有关，没有通用的值。
+对于直播流，推荐开启直播相关的配置，能有效的控制延时，直播延时通常需要服务器和客户端配合，客户端处理缓存的内容刷新以及 buffer 的管理。开启了直播状态后，默认会进行一些优化。其中 liveMaxLatency 的配置比较重要，设置的太小视频会频繁的等待，太大会延迟较高。具体需要根据流媒体的分片时间以及关键帧设置，没有固定值。
+
+举例来说：流媒体分片时间为 3 秒 取值为 t，关键帧为 2 秒 取值为 i，那么这 3 秒数据中，至少包含一个关键帧和一个P帧或者B帧，理想的情况为: i * Math.ceil(t / i) 这里就是 4。低于这个值一定会出现卡顿加载，这里还需要考虑到网络波动的情况。 
 
 直播模式下，推荐开启重试功能，默认断开 3s 后自动重连
 
