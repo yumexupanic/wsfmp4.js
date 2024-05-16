@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "vue": "^3.4.21",
-    "wsfmp4.js": "^0.0.4"
+    "wsfmp4.js": "^0.0.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
