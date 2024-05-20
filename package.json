@@ -13,7 +13,7 @@
   ],
   "homepage": "https://github.com/yumexupanic/wsfmp4.js",
   "authors": "yumexupanic <yumexupanic+wsfmp4@gmail.com>",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "files": [
     "dist/**/*",
