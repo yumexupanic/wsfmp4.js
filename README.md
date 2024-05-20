@@ -42,6 +42,7 @@ let wsfmp4 = new WSFMP4(media, {
 - live Enable live mode default false (recommended to enable live)
 - liveMaxLatency The maximum latency of the live broadcast, after exceeding it, it will refresh to the latest frame automatically Unit second Default 0 (recommended configuration for live broadcast)
 - cacheMax Maximum length of cache, buffer will be cleaned up automatically in seconds Default 8
+- duration Sets the total duration of the video in seconds Default 0 (this will toggle the loading method to sequence instead of PTS)
 
 For live streaming, it is recommended to turn on the configuration related to live streaming, which can effectively control the latency. Live streaming latency usually requires the cooperation of the server and the client, and the client handles the refresh of the cached content as well as the management of the buffer. After the live state is turned on, some optimizations will be performed by default. One of the liveMaxLatency configuration is more important, set too small video will frequently wait, too large delay is high. Specifically according to the streaming media slice time and key frame settings, there is no fixed value.
 
